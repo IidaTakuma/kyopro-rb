@@ -1,0 +1,8 @@
+{
+	"dockerComposeFile": ["docker-compose.yml"],
+	"service": "main",
+	"extensions": [
+		"misogi.ruby-rubocop"
+	],
+	"workspaceFolder": "/work"
+}

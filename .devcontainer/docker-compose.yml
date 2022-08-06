@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  main:
+    container_name: kyopro-rb
+    build:
+      context: ../
+      dockerfile: ./.devcontainer/Dockerfile
+    volumes:
+      - ../:/work
+      - ~/.config:/root/.config
+      - ~/.gitconfig:/root/.gitconfig
+    stdin_open: true
