@@ -10,9 +10,9 @@ RUN apt-add-repository ppa:fish-shell/release-3
 
 RUN apt-get install -y curl git vim fish
 
-WORKDIR /work
-
-COPY /work/Gemfile .
+COPY /Gemfile .
 RUN bundle install --jobs=2
+
+WORKDIR /work
 
 CMD [ "/bin/bash" ]
