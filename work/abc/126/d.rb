@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 解法
 # 木(隣接リスト)を作成する　=> 幅優先探索を行い頂点1からの距離の偶奇で塗り分ける
 
@@ -71,4 +73,4 @@ class AdjacencyMatrix
   end
 end
 
-main if __FILE__ == $0
+main if __FILE__ == $PROGRAM_NAME

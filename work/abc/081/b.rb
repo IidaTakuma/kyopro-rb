@@ -1,4 +1,6 @@
-INF = 100000
+# frozen_string_literal: true
+
+INF = 100_000
 
 def main
   n = gets.chomp.to_i
@@ -14,12 +16,13 @@ def main
 end
 
 def number_of_times_which_can_be_devided_by_2(num)
-  count  = 0
-  while true do
-    return count if num % 2 == 1
+  count = 0
+  loop do
+    return count if num.odd?
+
     count += 1
     num /= 2
   end
 end
 
-main if __FILE__ == $0
+main if __FILE__ == $PROGRAM_NAME

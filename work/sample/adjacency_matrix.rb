@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # 隣接リスト
 class AdjacencyMatrix
   attr_reader :v
@@ -22,7 +24,7 @@ end
 
 # How to Use
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   n = gets.to_i
   admat = AdjacencyMatrix.new(v: n)
 

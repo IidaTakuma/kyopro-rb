@@ -1,12 +1,14 @@
+# frozen_string_literal: true
+
 def main
   s = Input.one_line
   before = s.slice(0, 2).to_i
   after = s.slice(2, 4).to_i
 
-  if before == 0 || after == 0
-    if 1 <= before && before <= 12
+  if before.zero? || after.zero?
+    if before >= 1 && before <= 12
       puts 'MMYY'
-    elsif 1 <= after && after <= 12
+    elsif after >= 1 && after <= 12
       puts 'YYMM'
     else
       puts 'NA'
@@ -44,4 +46,4 @@ class Input
   end
 end
 
-main if __FILE__ == $0
+main if __FILE__ == $PROGRAM_NAME

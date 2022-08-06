@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Input
   def self.one_line
     gets

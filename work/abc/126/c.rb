@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def main
   n, k = Input.split_by_delimitor
 
@@ -33,4 +35,4 @@ class Input
   end
 end
 
-main if __FILE__ == $0
+main if __FILE__ == $PROGRAM_NAME

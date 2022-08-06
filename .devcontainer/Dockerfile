@@ -1,4 +1,4 @@
-FROM ruby:2.7.1-slim
+FROM ruby:2.7.1
 
 RUN set -ex
 RUN apt-get update
@@ -10,6 +10,9 @@ RUN apt-add-repository ppa:fish-shell/release-3
 
 RUN apt-get install -y curl git vim fish
 
-RUN gem install rubocop
+WORKDIR /work
+
+COPY /work/Gemfile .
+RUN bundle install --jobs=2
 
 CMD [ "/bin/bash" ]

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def main
   a, b = gets.split(' ').map(&:to_i)
   if a >= 13
@@ -9,4 +11,4 @@ def main
   end
 end
 
-main if __FILE__ == $0
+main if __FILE__ == $PROGRAM_NAME
