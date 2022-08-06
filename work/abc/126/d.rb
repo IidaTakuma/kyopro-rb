@@ -17,7 +17,7 @@ def main
 
   dist[0] = 0
 
-  while now_node = todo.pop
+  while now_node == todo.pop
     admat.graph[now_node].each do |next_node, cost|
       if dist[next_node] == -1
         dist[next_node] = (dist[now_node] + cost) % 2

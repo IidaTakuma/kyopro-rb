@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def main
-  a, b = gets.split(' ').map(&:to_i)
+  a, b = gets.split.map(&:to_i)
   if a >= 13
     puts b
   elsif a >= 6

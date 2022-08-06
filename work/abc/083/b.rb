@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 def main
-  n, a, b = gets.chomp.split(' ').map(&:to_i)
+  n, a, b = gets.chomp.split.map(&:to_i)
 
   sum = 0
   (1..n).each do |i|

@@ -4,7 +4,7 @@ INF = 100_000
 
 def main
   n = gets.chomp.to_i
-  a = gets.chomp.split(' ').map(&:to_i)
+  a = gets.chomp.split.map(&:to_i)
 
   ans = INF
 
